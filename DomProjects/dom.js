@@ -18,7 +18,7 @@
 // items[0].style.backgroundColor='grey';
 // items[0].style.color='green';
 
-let itemslist = document.getElementsByClassName('list-group-item');
+/*let itemslist = document.getElementsByClassName('list-group-item');
 console.log(itemslist);
 itemslist[2].style.backgroundColor='Green';
 
@@ -27,5 +27,15 @@ for (let i =0; i <itemslist.length; i++){
 }
 
 itemslist = document.querySelector('li'); // select the li element
-itemslist.classList.add('list-group-item');
+itemslist.classList.add('list-group-item');*/
 
+
+/*let secondItemInList=document.querySelector('.list-group-item:nth-child(2)');
+console.log(secondItemInList);
+secondItemInList.style.backgroundColor='green'*/
+
+
+let odd = document.querySelectorAll('li:nth-child(odd');
+for(let i=0; i<odd.length; i++){
+    odd[i].style.backgroundColor='green';
+}
