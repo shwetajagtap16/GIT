@@ -1,7 +1,7 @@
 // console.log('hello');
-console.log('hello world');
+// console.log('hello world');
 // console.log(document.URL);
-console.log(document.head);
+// console.log(document.head);
 // console.log(document.body);
 // console.log(document.forms);
 // var headerTitle = document.getElementById('header-title');
@@ -17,9 +17,15 @@ console.log(document.head);
 // items[0].style.color='yellow';
 // items[0].style.backgroundColor='grey';
 // items[0].style.color='green';
-var listItems = document.getElementsByClassName('list-group-item');
-console.log(listItems);
-listItems[2].style.backgroundColor = 'green';
-for(var i =0; i<listItems.length; i++){
-    listItems[i].style.fontWeight ='bold';
+
+let itemslist = document.getElementsByClassName('list-group-item');
+console.log(itemslist);
+itemslist[2].style.backgroundColor='Green';
+
+for (let i =0; i <itemslist.length; i++){
+    itemslist[i].style.fontWeight='bold';
 }
+
+itemslist = document.querySelector('li'); // select the li element
+itemslist.classList.add('list-group-item');
+
