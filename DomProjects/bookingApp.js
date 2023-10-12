@@ -19,5 +19,30 @@ function displayUsers(user) {
   const childElement = document.createElement('li');
   childElement.textContent= user.name + '-'+ user.email
   parentElement.appendChild(childElement);
+
+  const deleteButton = document.createElement('button');
+  deleteButton.textContent='Delete';
+  //to identify which user to delete
+  deleteButton.setAttribute('data-email',user.email) 
+  childElement.appendChild(deleteButton)
+  parentElement.appendChild(childElement);
+
+  //event listener for delete button
+  deleteButton.addEventListener('click',function(){
+    //remove from UI
+    parentElement.removeChild(childElement);
+    //remove form local storage
+    localStorage.removeItem(user.email);
+  });
+
+
 }
+ 
+
+
+
+
+
+
+
 
